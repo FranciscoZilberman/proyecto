@@ -4,35 +4,38 @@
     font-style: italic;
     box-sizing: border-box;
 }
-body{
-   /*  background-image: url(../Fondo.jpg); */
-    background-size: cover;
-    background-position: top;
-    background-color: rgb(119, 0, 129);
+
+
+.carousel-inner {
+    height: 700px;
 }
 
-.logo{
-    width: 100%;
-    padding-left: 41%;
-    margin-bottom: 2rem;
+.flecha {
+    position: absolute;
+    transform: translate(-300%,-0%);
 }
+
+
 
 /* HEADER */
 /* Navegacion en lista */
-.Navegacion{
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    font-size: 24px;
-    background-color: white;
-    flex-wrap: wrap;
+.navbar-brand {
+    color: rgb(204,154,6);
 }
 
-.Navegacion a{
-    text-decoration: none;
-    color: rgb(172, 9, 123);
-    line-height: 18px;
+.nav-item a{
+    color: rgb(204,154,6);
 }
+
+.navbar-nav, .nav-link {
+    color: rgb(204,154,6);
+}
+
+
+
+
+
+
 /* MAIN */
 /* Titulo Oferta del Mes */
 
