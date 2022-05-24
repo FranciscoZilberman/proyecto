@@ -37,10 +37,6 @@
                 </button>
       </div>
     </div>
-
-
-
-    
     <div class="container">
     <header> 
         <nav class="navbar navbar-expand-lg bg-dark text">
@@ -73,18 +69,28 @@
     </header>
     </div>
 
-    <main>
-        <section>
-            <form method="post">
-               <label for="consulta">Pongase en contacto con nosotros</label>
-                 <input placeholder="Escriba su consulta aquí"></input>
-                <input type="submit" value="Enviar"></input>
-                <input type="reset" value="Vaciar"></input>
-            </form>       
-        </section>
+    <main class="contacto">
+      <form class="form">
+        <div class="form__container">
+          <h2 class="form__titulo">Ponganse en contacto con la empresa</h2>
+          <input type="text" class="form__input" placeholder="Nombre:">
+          <input type="email" class="form__input" placeholder="Email:">
+          <textarea class="form__input form__input--message" placeholder="Escriba su consulta aquí"></textarea>
+
+          <input type="submit" value="Enviar" class="form__cta">
+
+
+
+
+
+        </div>
+      </form>
+
+
     </main>
     <footer>
         <!-- REDES SOCIALES -->
+        <p class="TituloFooter">Contactenos a travez de nuestras redes sociales</p>
         <div>
             <a href="https://web.whatsapp.com/"><img class="Redes" src="../Recursos/Footer/whatsapp.png" alt="Logo de Whatsapp"></a>
             <a href="https://www.instagram.com/"><img class="Redes" src="../Recursos/Footer/instagram.png" alt="Logo de Instagram"></a>
