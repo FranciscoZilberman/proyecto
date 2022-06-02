@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-style: italic;
+    box-sizing: border-box;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.flecha {
+    position: absolute;
+    transform: translate(-300%,-0%);
+}
+
+
+
+/* HEADER */
+/* Navegacion en lista */
+.navbar-brand {
+    color: $amarillo;
+}
+
+.nav-item a{
+    color: $amarillo;
+}
+
+.navbar-nav, .nav-link {
+    color: $amarillo;
+}
+
+body {
+    background-color: $fondobody;
+}

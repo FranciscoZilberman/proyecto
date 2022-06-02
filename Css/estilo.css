@@ -25,6 +25,74 @@
 body {
   background-color: #1b1818; }
 
+/* REDES */
+.Redes {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin: 1rem; }
+
+.footer {
+  color: #fff;
+  text-align: center;
+  background-image: url(../Recursos/Footer/FondoFooter.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 200px; }
+  .footer__titulo {
+    padding-top: 1rem;
+    font-size: 1.3rem; }
+  .footer img:hover {
+    transform: scale(1.5);
+    transition: 0.5s; }
+
+/* ----------------- PAGINA CONTACTENOS--------------------- */
+/* --------- CUADRO DE CONTACTO------------ */
+.contacto {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Recursos/Chevrolet/Contactenos/Fondo.jpg); }
+
+.form {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 3.5em 1.5em;
+  margin: auto; }
+  .form__container {
+    display: grid;
+    width: 100%;
+    gap: 1em;
+    grid-auto-columns: 100%; }
+  .form__titulo {
+    text-align: center;
+    color: #ffbf00;
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin-bottom: .4em; }
+  .form__input {
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 0.2em; }
+    .form__input--message {
+      resize: none;
+      padding: 1.8em 1em;
+      margin-bottom: .5em; }
+  .form__cta {
+    background-color: #cc9a06;
+    color: #000;
+    font-size: 1rem;
+    border: none;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer; }
+
 /* --------------------- PAGINA NUESTROS SERVICIOS----------------------- */
 /* ----------------IMAGEN ARRIBA DE TARJETAS ---- IMAGEN ABAJO DE TARJETAS-------------- */
 .Servicio {
@@ -56,7 +124,17 @@ body {
   position: relative;
   align-items: flex-end;
   box-shadow: 0px 7px 10px rgba 0, 0, 0, 0.5;
-  transition: 0.5s ease-in-out; }
+  transition: 0.5s ease-in-out;
+  /*     display: flex;
+    width: 320px;
+    height: 400px;
+    padding: 2rem 1rem;
+    background: #000;
+    position: relative;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba (0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+ */ }
   .Tarjeta:hover {
     transform: translateY(20px); }
     .Tarjeta:hover .Info {
@@ -111,190 +189,7 @@ body {
       box-shadow: 0px 7px 10px rgba 0, 0, 0, 0.5; }
 
 /* -------TERMINAN TARJETAS---------- */
-/* ----------------- PAGINA CONTACTENOS--------------------- */
-/* --------- CUADRO DE CONTACTO------------ */
-.contacto {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Recursos/Chevrolet/Contactenos/Fondo.jpg); }
-
-.form {
-  width: 90%;
-  max-width: 400px;
-  border-radius: 1em;
-  padding: 3.5em 1.5em;
-  margin: auto; }
-  .form__container {
-    display: grid;
-    width: 100%;
-    gap: 1em;
-    grid-auto-columns: 100%; }
-  .form__titulo {
-    text-align: center;
-    color: #ffbf00;
-    font-weight: 700;
-    font-size: 1.9rem;
-    margin-bottom: .4em; }
-  .form__input {
-    font-size: 1rem;
-    padding: .8em 1em;
-    outline: none;
-    border: none;
-    border: 1px solid #000;
-    border-radius: 0.2em; }
-    .form__input--message {
-      resize: none;
-      padding: 1.8em 1em;
-      margin-bottom: .5em; }
-  .form__cta {
-    background-color: #cc9a06;
-    color: #000;
-    font-size: 1rem;
-    border: none;
-    padding: .7em 0;
-    border-radius: .2em;
-    cursor: pointer; }
-
-/* REDES */
-.Redes {
-  width: 3rem;
-  height: 3rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  margin: 1rem; }
-
-.footer {
-  color: #fff;
-  text-align: center;
-  background-image: url(../Recursos/Footer/FondoFooter.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  height: 200px; }
-  .footer__titulo {
-    padding-top: 1rem;
-    font-size: 1.3rem; }
-  .footer img:hover {
-    transform: scale(1.5);
-    transition: 0.5s; }
-
-/* ---------------------- ESTO SE VA A BORRAR ----------------------- */
-/* MAIN */
-/* Titulo Oferta del Mes */
-.OfertaMes {
-  margin-top: 5rem;
-  text-align: center;
-  font-size: 25px;
-  background-color: #97b8d6;
-  color: #ac097b; }
-
-.Oferta {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
-  grid-template-areas: "Ele1 Ele1" "Ele2 Ele3" "Ele4 Ele4" "Ele5 Ele6"; }
-
-.OfertaOnix {
-  grid-area: Ele1;
-  text-align: center;
-  align-self: center;
-  font-size: 25px;
-  color: white; }
-
-.ListaOferta1 {
-  grid-area: Ele2;
-  list-style-type: none;
-  line-height: 50px;
-  padding-left: 1rem;
-  text-align: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 420px;
-  border: 1px solid lightgray;
-  box-shadow: 2px 2px 8px 4px #ac097b;
-  border-radius: 15px;
-  font-family: sans-serif;
-  align-self: center;
-  margin-left: 25%;
-  background-color: black; }
-
-.LicitaOnix {
-  padding-top: 6rem;
-  padding-left: 2rem;
-  color: white; }
-
-.LicitaOnix2 {
-  padding-top: 0.5rem;
-  padding-left: 2rem;
-  color: white; }
-
-.ListaOferta1 h3 {
-  margin-bottom: 2rem;
-  color: white; }
-
-.ImagenOnix {
-  grid-area: Ele3;
-  background-image: url(../Recursos/Onix-joy.png);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 500px;
-  background-size: cover; }
-
-.OfertaTcross {
-  grid-area: Ele4;
-  text-align: center;
-  align-self: center;
-  font-size: 25px;
-  color: white; }
-
-.Tcross {
-  grid-area: Ele5; }
-
-.ImagenTcross {
-  background-image: url(../Recursos/Tcross.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 500px;
-  background-size: cover; }
-
-.ListaOferta2 {
-  grid-area: Ele6;
-  list-style-type: none;
-  line-height: 50px;
-  padding-left: 1rem;
-  text-align: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 420px;
-  border: 1px solid lightgray;
-  box-shadow: 2px 2px 8px 4px #ac097b;
-  border-radius: 15px;
-  font-family: sans-serif;
-  align-self: center;
-  margin-left: 25%;
-  background-color: black; }
-
-.LicitaTcross1 {
-  padding-right: 2rem;
-  padding-top: 6rem;
-  text-align: right;
-  color: white; }
-
-.LicitaTcross2 {
-  padding-right: 2rem;
-  padding-top: 0.5rem;
-  text-align: right;
-  color: white; }
-
-.ListaOferta2 h3 {
-  margin-bottom: 2rem;
-  color: white; }
-
+/* ***************** ARRANCA BOTON ****************** */
 button {
   position: relative;
   border: none;
@@ -353,6 +248,7 @@ button:hover span:nth-child(3) {
 button:hover span:nth-child(4) {
   top: 0; }
 
+/* -------------------TERMINA BOTON-------------------------- */
 /* // `xs` returns only a ruleset and no media query
 // ... { ... }
 

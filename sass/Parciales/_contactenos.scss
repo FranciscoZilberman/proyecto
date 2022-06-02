@@ -1,0 +1,57 @@
+/* ----------------- PAGINA CONTACTENOS--------------------- */
+/* --------- CUADRO DE CONTACTO------------ */
+
+.contacto {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Recursos/Chevrolet/Contactenos/Fondo.jpg);
+}
+
+.form {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+
+    &__container {
+        display: grid;
+        width: 100%;
+        gap: 1em;
+        grid-auto-columns: 100%;
+    }
+    
+    &__titulo {
+        text-align: center;
+        color: $contactenostitulo;
+        font-weight: 700;
+        font-size: 1.9rem;
+        margin-bottom: .4em;
+    }
+
+    &__input {
+        font-size: 1rem;
+        padding: .8em 1em;
+        outline: none;
+        border: none;
+        border: 1px solid $negro;
+        border-radius: 0.2em;
+
+        &--message {
+            resize: none;
+            padding: 1.8em 1em;
+            margin-bottom: .5em;
+        }
+    }
+
+    &__cta {
+        background-color: $amarillo;
+        color: $negro;
+        font-size: 1rem;
+        border: none;
+        padding: .7em 0;
+        border-radius: .2em;
+        cursor: pointer;
+    }
+}

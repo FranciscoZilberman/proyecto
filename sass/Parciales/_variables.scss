@@ -1,0 +1,26 @@
+$colores:(
+    amarillo: rgb(204,154,6),
+    negrobody: rgb(27, 24, 24),
+    blanco: #fff,
+    negro: #000,
+    amarillotitulo: rgb(255, 191, 0)
+);
+
+$amarillo:map-get($colores, amarillo);
+$fondobody:map-get($colores, negrobody);
+$blanco:map-get($colores, blanco);
+$negro:map-get($colores, negro);
+$contactenostitulo:map-get($colores, amarillotitulo);
+
+
+@mixin Tarjeta {
+    display: flex;
+    width: 320px;
+    height: 400px;
+    padding: 2rem 1rem;
+    background: $negro;
+    position: relative;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba (0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
