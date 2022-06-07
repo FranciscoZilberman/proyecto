@@ -1,0 +1,143 @@
+.TituloDestacado {
+    h3{
+        font-size: 25px;
+        color: $blanco;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    h4 {
+        font-size: 25px;
+        color: $blanco;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    }
+
+.DescripcionDestacado{
+    display: flex;
+    flex-flow: column nowrap;
+    h3{
+        font-size: 25px;
+        color: $amarillo;
+        text-align: center;
+        margin-top: 20px;
+    }
+    p{
+        width: 50%;
+        font-size: 15px;
+        color: $amarillo;
+        line-height: 30px;
+        text-align: center;
+        margin: auto;
+    }
+
+}
+
+.Licita {
+    p{
+        font-size: 20px;
+        color: $blanco;
+        text-align: left;
+        margin: 0;
+
+    }
+}
+
+
+.Destacado{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 40px 100px;
+    
+}
+
+
+.Contenedor{
+    display: flex;
+    flex-flow: column nowrap;
+    background: gray;
+    border: solid black 3px;
+    width: 80%;
+    aspect-ratio: 4/5;
+    cursor: pointer;
+    }
+
+.ContenedorA{
+    background: rgb(158, 8, 8);
+    border: solid black 3px;
+    flex-basis: 75%;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.ContenedorA1{
+    background: rgb(221, 3, 174);
+    border: solid black 3px;
+    flex-basis: 75%;
+}
+.ContenedorA img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.ContenedorA2{
+    background: rgb(36, 3, 221);
+    border: solid black 3px;
+    flex-basis: 25%;
+
+    display: flex;
+    flex-flow: column wrap; 
+
+}
+.AutoA{    
+    flex-grow: 1;
+}
+
+.AutoA img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.ContenedorB{
+    background: rgb(8, 158, 33);
+    border: solid black 3px; 
+    flex-basis: 25%;
+    min-height: 25% ;
+
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: hidden;
+}
+
+.AutoB{
+  flex-grow: 1;
+  }
+
+.AutoB img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+
+/* --------------- CARRUSEL DE IMAGENES -------------- */
+.modal {
+    --bs-modal-width: 100%;
+    background: rgba($color: #000, $alpha: 0.4);
+}
+
+.modal-content {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+
+}
+
+
+.carousel-item img{
+    object-fit: cover;
+    height: 850px;
+    }

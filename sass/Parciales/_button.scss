@@ -7,8 +7,8 @@ button {
     cursor: pointer;
     transition: 0.5s;
     overflow: hidden;
-    background: #350642;
-    color: #dcc2e4;
+    background: $negro;
+    color: $amarillo;
     margin-top: 3rem;
     margin-left: 45%;
     margin-bottom: 3rem;
@@ -16,6 +16,7 @@ button {
 
 button:hover {
     color: white;
+
 }
 
 button span {
