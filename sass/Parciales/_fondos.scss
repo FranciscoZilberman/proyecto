@@ -1,0 +1,37 @@
+.Fondo {
+    &Cruze {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url("https://images.pexels.com/photos/248747/pexels-photo-248747.jpeg");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    &Onix {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url("https://images.pexels.com/photos/434450/pexels-photo-434450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    &Joy {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), url("https://images.pexels.com/photos/54546/pexels-photo-54546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    &Servicio {
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1)), url("https://images.pexels.com/photos/326259/pexels-photo-326259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") ;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    &Index {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), url("https://images.pexels.com/photos/9462582/pexels-photo-9462582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") ;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    &Tracker {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("https://images.pexels.com/photos/379419/pexels-photo-379419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") ;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    &S10 {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), url("https://images.pexels.com/photos/339814/pexels-photo-339814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") ;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}

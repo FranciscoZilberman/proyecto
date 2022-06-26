@@ -15,20 +15,20 @@
 <body>
     <div class="Media">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
+            <div class="carousel-indicators nodisplay">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
             <div class="carousel-item active">
-             <img src="../Recursos/Chevrolet/Logo.png" class="d-block w-100" alt="...">
+             <img src="../Recursos/Chevrolet/Logo.png" class="d-block w-100" alt="Logo">
              </div>
             <div class="carousel-item">
-                <img src="../Recursos/Chevrolet/Logo2.png" class="d-block w-100" alt="...">
+                <img src="../Recursos/Chevrolet/Logo2.png" class="d-block w-100" alt="Logo">
             </div>
             <div class="carousel-item">
-                <img src="../Recursos/Chevrolet/Logo3.jpg" class="d-block w-100" alt="...">
+                <img src="../Recursos/Chevrolet/Logo3.jpg" class="d-block w-100" alt="Logo">
             </div>
             </div>
                 <button class="carousel-control-prev flecha" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -42,15 +42,11 @@
       </div>
     </div>
 
-
-
-    
-    <div class="container">
-    <header> 
+    <header class="container"> 
       <nav class="navbar navbar-expand-lg bg-dark text">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">CHEVROLET</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler colorBoton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -63,9 +59,9 @@
                 Autos
                 </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                      <li><a class="dropdown-item" href="./autos-0km.html">Cruze</a></li>
-                      <li><a class="dropdown-item" href="./autos-0km.html">Onix</a></li>
-                      <li><a class="dropdown-item" href="./autos-0km.html">Prisma</a></li>
+                      <li><a class="dropdown-item" href="./cruze.html">Cruze</a></li>
+                      <li><a class="dropdown-item" href="./onix.html">Onix</a></li>
+                      <li><a class="dropdown-item" href="./joy.html">Joy</a></li>
                     </ul>
               </li>
               <li class="nav-item dropdown">
@@ -74,7 +70,7 @@
                </a>
                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                      <li><a class="dropdown-item" href="./camionetas.html">S10</a></li>
-                     <li><a class="dropdown-item" href="./camionetas.html">Tracker</a></li>
+                     <li><a class="dropdown-item" href="./tracker.html">Tracker</a></li>
                    </ul>
              </li>
               <li class="nav-item">
@@ -88,19 +84,21 @@
         </div>
       </nav>
     </header>
-    </div>
-    <main>
+
+    <main class="FondoServicio">
+              <!-- *********SEPARACION ENTRE MODELOS DE AUTOS************ -->
+      <div class="separacion"></div>
+              <!-- *********SEPARACION ENTRE MODELOS DE AUTOS************ -->
         <div class="Servicio">
-            <img class="img-fluid" src="../Recursos/Chevrolet/Servicios/ServiciosA.png" alt="">
-
+            <img class="img-fluid" src="../Recursos/Chevrolet/Servicios/ServiciosA.png" alt="Servicios">
         </div>
-
-
-
+        <div class="NuestrosServicios">
+          <h1>Nuestros Servicios</h1>
+        </div>
         <div class="Tarj">
         <div class="Wrapper">
             <div class="Tarjeta">
-                <img src="../Recursos/Chevrolet/Servicios/Servicios1.png" alt="">
+                <img src="../Recursos/Chevrolet/Servicios/Servicios1.png" alt="Carta de Servicio">
                 <div class="Info">
                     <h2>Servicio Personalizado</h2>
                     <p>Te ofrecemos la asistencia más completa para vos y tu auto. Ahora podés presenciar el proceso junto a nuestros
@@ -112,7 +110,7 @@
 
         <div class="Wrapper">
             <div class="Tarjeta">
-                <img src="../Recursos/Chevrolet/Servicios/Servicios2.png" alt="">
+                <img src="../Recursos/Chevrolet/Servicios/Servicios2.png" alt="Carta de Servicio">
                 <div class="Info">
                     <h2>Kits Mantenimiento</h2>
                     <p>Nuestros talleres oficiales cuentan con la mejor atención y excelentes opciones para el cuidado de tu auto. Descubrí los nuevos kits de mantenimiento de bujías, pastillas de freno, correas de distribución y mucho más. Elegí el tuyo y renová tu Chevrolet por un precio increíble</p>
@@ -123,7 +121,7 @@
 
         <div class="Wrapper">
             <div class="Tarjeta">
-                <img src="../Recursos/Chevrolet/Servicios/Servicios3.png" alt="">
+                <img src="../Recursos/Chevrolet/Servicios/Servicios3.png" alt="Carta de Servicio">
                 <div class="Info">
                     <h2>Tranquilidad bonificada</h2>
                     <p>En Chevrolet, además del servicio de mantenimiento, también te bonificamos la confianza. Porque contás con hasta tres servicios bonificados, según el modelo de tu Chevrolet</p>
@@ -135,15 +133,16 @@
         </div>
 
         <div class="Servicio">
-          <img  class="img-fluid" src="../Recursos/Chevrolet/Servicios/ServiciosB.png" class="img-fluid" alt="">
-
+          <img  class="img-fluid" src="../Recursos/Chevrolet/Servicios/ServiciosB.png" class="img-fluid" alt="Servicios">
       </div>
+              <!-- *********SEPARACION ENTRE MODELOS DE AUTOS************ -->
+      <div class="separacion"></div>
+              <!-- *********SEPARACION ENTRE MODELOS DE AUTOS************ -->
     </main>
-
     <footer>
       <div class="footer">
         <!-- REDES SOCIALES -->
-        <h3 class="footer__titulo">Contactenos a travez de nuestras redes sociales</h3>
+        <h3 class="footer__titulo">Contactenos a traves de nuestras redes sociales</h3>
         <div>
             <a href="https://web.whatsapp.com/"><img class="Redes" src="../Recursos/Footer/whatsapp.png" alt="Logo de Whatsapp"></a>
             <a href="https://www.instagram.com/"><img class="Redes" src="../Recursos/Footer/instagram.png" alt="Logo de Instagram"></a>

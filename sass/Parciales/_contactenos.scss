@@ -5,7 +5,9 @@
     min-height: 100vh;
     width: 100%;
     display: flex;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Recursos/Chevrolet/Contactenos/Fondo.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), url("https://images.pexels.com/photos/101710/pexels-photo-101710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") ;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .form {

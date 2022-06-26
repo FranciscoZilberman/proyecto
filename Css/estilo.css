@@ -5,7 +5,12 @@
   box-sizing: border-box; }
 
 .carousel-inner {
-  height: 700px; }
+  width: auto;
+  height: 700px;
+  max-height: 700px; }
+
+.carousel-item img {
+  height: 700px !important; }
 
 .flecha {
   position: absolute;
@@ -54,7 +59,9 @@ body {
   min-height: 100vh;
   width: 100%;
   display: flex;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Recursos/Chevrolet/Contactenos/Fondo.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), black), url("https://images.pexels.com/photos/101710/pexels-photo-101710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
+  background-size: cover; }
 
 .form {
   width: 90%;
@@ -100,15 +107,21 @@ body {
   width: 100%;
   height: 300px;
   margin-bottom: 200px;
-  margin-top: 150px;
+  margin-top: 100px;
   justify-content: center; }
+
+.NuestrosServicios {
+  font-size: 1em;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  color: #cc9a06; }
 
 /* ---------------------TARJETAS------------------------ */
 .Tarj {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: #222; }
+  align-items: center; }
 
 .Wrapper {
   display: flex;
@@ -196,10 +209,10 @@ button {
   outline: none;
   padding: 10px 15px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 1s;
   overflow: hidden;
-  background: #000;
-  color: #cc9a06;
+  background: #b9ad00;
+  color: #000;
   margin-top: 3rem;
   margin-left: 45%;
   margin-bottom: 3rem; }
@@ -210,7 +223,7 @@ button:hover {
 button span {
   position: absolute;
   background: white;
-  transition: 0.5s; }
+  transition: 1s; }
 
 button span:nth-child(1) {
   width: 100%;
@@ -249,38 +262,8 @@ button:hover span:nth-child(4) {
   top: 0; }
 
 /* -------------------TERMINA BOTON-------------------------- */
-/* // `xs` returns only a ruleset and no media query
-// ... { ... }
-
-// `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-  .Tarj {
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem; }
-  .Media {
-    height: 300px; }
-  .Media button {
-    color: #fff; }
-  #carouselExampleIndicators {
-    width: 320px;
-    height: 250px; }
-  #carouselExampleIndicators img {
-    height: 250px; }
-  .navbar-toggler button {
-    color: #fff; }
-  .Servicio img {
-    width: 100%;
-    object-fit: contain; }
-  .form {
-    padding: 3.5em 1em; } }
-
-/* // `md` applies to small devices (landscape phones, less than 768px) */
-/* // `lg` applies to medium devices (tablets, less than 992px) */
-/* // `xl` applies to large devices (desktops, less than 1200px) */
-/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 .TituloDestacado h3 {
-  font-size: 25px;
+  font-size: 3em;
   color: #fff;
   text-align: center;
   padding-top: 50px;
@@ -303,7 +286,7 @@ button:hover span:nth-child(4) {
     margin-top: 20px; }
   .DescripcionDestacado p {
     width: 50%;
-    font-size: 15px;
+    font-size: 20px;
     color: #cc9a06;
     line-height: 30px;
     text-align: center;
@@ -313,7 +296,8 @@ button:hover span:nth-child(4) {
   font-size: 20px;
   color: #fff;
   text-align: left;
-  margin: 0; }
+  margin: 0;
+  margin-left: 15px; }
 
 .Destacado {
   display: flex;
@@ -328,55 +312,45 @@ button:hover span:nth-child(4) {
   width: 80%;
   aspect-ratio: 4/5;
   cursor: pointer; }
-
-.ContenedorA {
-  background: #9e0808;
-  border: solid black 3px;
-  flex-basis: 75%;
-  display: flex;
-  flex-flow: row nowrap; }
-
-.ContenedorA1 {
-  background: #dd03ae;
-  border: solid black 3px;
-  flex-basis: 75%; }
-
-.ContenedorA img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.ContenedorA2 {
-  background: #2403dd;
-  border: solid black 3px;
-  flex-basis: 25%;
-  display: flex;
-  flex-flow: column wrap; }
+  .ContenedorA {
+    display: flex;
+    border: solid black 3px;
+    flex-basis: 75%;
+    flex-flow: row nowrap; }
+    .ContenedorA img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .ContenedorA1 {
+      border: solid black 3px;
+      flex-basis: 75%; }
+    .ContenedorA2 {
+      display: flex;
+      border: solid black 3px;
+      flex-basis: 25%;
+      flex-flow: column wrap; }
 
 .AutoA {
   flex-grow: 1; }
-
-.AutoA img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
+  .AutoA img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .ContenedorB {
-  background: #089e21;
+  display: flex;
   border: solid black 3px;
   flex-basis: 25%;
   min-height: 25%;
-  display: flex;
   flex-flow: row nowrap;
   overflow: hidden; }
 
 .AutoB {
   flex-grow: 1; }
-
-.AutoB img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
+  .AutoB img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 /* --------------- CARRUSEL DE IMAGENES -------------- */
 .modal {
@@ -388,4 +362,386 @@ button:hover span:nth-child(4) {
 
 .carousel-item img {
   object-fit: cover;
-  height: 850px; }
+  height: 700px; }
+
+.TituloAuto {
+  display: flex;
+  min-height: 10vh;
+  margin-top: 7%;
+  justify-content: center; }
+  .TituloAutoB {
+    position: relative; }
+    .TituloAutoB h1 {
+      font-size: 4em;
+      position: absolute;
+      letter-spacing: 5px;
+      transform: translate(-50%, -50%); }
+
+.TituloAutoB h1:nth-child(1) {
+  color: #cc9a06;
+  -webkit-text-stroke: 2px rgb 166, 0, 255; }
+
+.TituloAutoB h1:nth-child(2) {
+  color: #fff;
+  animation: animate 3s ease-in-out infinite; }
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%); }
+  50% {
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%); } }
+
+.Categoria {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  color: #cc9a06;
+  text-decoration: underline; }
+
+.Vehiculo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  margin: 25px 25px;
+  align-content: flex-start; }
+  .Vehiculo__texto {
+    text-align: center;
+    color: #cc9a06; }
+    .Vehiculo__texto p {
+      font-size: 1.1em; }
+  .Vehiculo__img {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: auto; }
+    .Vehiculo__img img {
+      border-radius: 1rem; }
+  .Vehiculo__galeria {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #cc9a06;
+    cursor: pointer; }
+    .Vehiculo__galeria h4 {
+      font-size: 1.3em; }
+
+.separacion {
+  width: 100%;
+  height: 5px;
+  background-color: #000; }
+
+.FondoCruze {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black), url("https://images.pexels.com/photos/248747/pexels-photo-248747.jpeg");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.FondoOnix {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black), url("https://images.pexels.com/photos/434450/pexels-photo-434450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.FondoJoy {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), black), url("https://images.pexels.com/photos/54546/pexels-photo-54546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.FondoServicio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), black), url("https://images.pexels.com/photos/326259/pexels-photo-326259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.FondoIndex {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), black), url("https://images.pexels.com/photos/9462582/pexels-photo-9462582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.FondoTracker {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("https://images.pexels.com/photos/379419/pexels-photo-379419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.FondoS10 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), black), url("https://images.pexels.com/photos/339814/pexels-photo-339814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.ImgTracker {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.ImgTracker img {
+  border-radius: 2rem;
+  cursor: pointer; }
+
+.TituloTracker {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  color: #cc9a06; }
+
+.Tracker {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .TrackerGaleria {
+    text-align: center;
+    color: #cc9a06;
+    margin-top: 20px;
+    cursor: pointer; }
+  .TrackerTexto {
+    width: 50%;
+    margin-top: 15px; }
+    .TrackerTexto h3 {
+      text-align: center;
+      color: #cc9a06; }
+    .TrackerTexto h4 {
+      text-align: center;
+      color: #cc9a06;
+      font-size: 1em;
+      margin-top: 40px; }
+    .TrackerTexto p {
+      font-size: 1.1em;
+      color: #cc9a06;
+      text-align: center;
+      padding: 2rem; }
+  .TrackerTextoUltimo {
+    width: 100%;
+    font-size: 1em;
+    color: #cc9a06;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .TrackerTextoUltimo h3 {
+      text-align: center;
+      color: #cc9a06; }
+    .TrackerTextoUltimo h4 {
+      text-align: center;
+      color: #cc9a06;
+      font-size: 1em;
+      margin-top: 40px; }
+    .TrackerTextoUltimo p {
+      font-size: 1.1em;
+      color: #cc9a06;
+      text-align: center;
+      padding: 2rem; }
+  .TrackerImg img {
+    border-radius: 2rem; }
+  .TrackerImg {
+    width: 50%; }
+
+.ImgS10 {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.ImgS10 img {
+  border-radius: 2rem;
+  cursor: pointer; }
+
+.TituloS10 {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #cc9a06; }
+
+.S10 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .S10Galeria {
+    text-align: center;
+    color: #cc9a06;
+    margin-top: 20px;
+    cursor: pointer; }
+  .S10Texto {
+    width: 50%;
+    margin-top: 15px; }
+    .S10Texto h3 {
+      text-align: center;
+      color: #cc9a06; }
+    .S10Texto h4 {
+      text-align: center;
+      color: #cc9a06;
+      font-size: 1em;
+      margin-top: 40px; }
+    .S10Texto p {
+      font-size: 1.1em;
+      color: #cc9a06;
+      text-align: center;
+      padding: 2rem; }
+  .S10Img img {
+    border-radius: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .S10Img {
+    width: 50%; }
+
+@media (max-width: 575.98px) {
+  .Media button {
+    color: #fff; }
+  .nodisplay {
+    display: none; }
+  .TituloDestacado h3 {
+    font-size: 2em; }
+  .DescripcionDestacado h3 {
+    font-size: 20px; }
+  .DescripcionDestacado p {
+    font-size: 14px; }
+  .Licita {
+    margin: 50px 0; }
+    .Licita p {
+      font-size: 14px; }
+  .navbar-toggler button {
+    color: #fff; }
+  .Servicio img {
+    width: 100%;
+    object-fit: contain; }
+  .form {
+    padding: 3.5em 1em; }
+  .Destacado {
+    flex-flow: column nowrap;
+    padding: 0; }
+  .Contenedor {
+    flex-flow: column nowrap;
+    align-self: center; }
+  .ContenedorA {
+    flex-flow: column nowrap; }
+  .ContenedorB {
+    flex-flow: column nowrap;
+    min-height: 0%;
+    /*para que no se salga la caja b del contenedor*/ }
+  .BotonQuery {
+    display: flex;
+    justify-content: center; }
+  .BotonCelu {
+    margin: 3rem 0; }
+  /* ********/
+  .footer__titulo {
+    font-size: 1rem; }
+  .Redes {
+    width: 2rem;
+    height: 2rem; }
+  /* **********/
+  .TituloAuto {
+    margin-top: 15vh; }
+  .Vehiculo {
+    grid-template-columns: 1fr; }
+    .Vehiculo__texto h3 {
+      font-size: 1.2rem; }
+    .Vehiculo__texto p {
+      font-size: 1rem; } }
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 1281.98px) {
+  .Destacado {
+    flex-flow: column nowrap;
+    padding: 0; }
+  .Contenedor {
+    flex-flow: column nowrap;
+    align-self: center; }
+  .ContenedorA {
+    flex-flow: column nowrap; }
+  .ContenedorB {
+    flex-flow: column nowrap;
+    min-height: 0%;
+    /*para que no se salga la caja b del contenedor*/ }
+  .Licita {
+    margin: 100px auto; }
+  /* ********/
+  .footer__titulo {
+    font-size: 1rem; }
+  .TituloAuto {
+    margin-top: 15vh; } }
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .Media {
+    height: 100% !important; }
+  .carousel-inner {
+    width: 100%;
+    height: 100%; }
+  .carousel-item img {
+    height: 100% !important;
+    aspect-ratio: 16/9; }
+  .BotonQuery {
+    display: flex;
+    justify-content: center; }
+  .BotonCelu {
+    margin: 3rem 0; }
+  .colorBoton {
+    background-color: #cc9a06 !important; }
+  .Tarj {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem; }
+  /* TRACKER */
+  .ImgTracker {
+    height: 300px;
+    margin: 50px 0; }
+  .TituloTracker {
+    font-size: 1.5em;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 100px; }
+  .Tracker {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 25px; }
+    .TrackerTexto {
+      width: 100%; }
+      .TrackerTexto p {
+        font-size: 0.8em; }
+    .TrackerTextoUltimo {
+      margin-top: 0;
+      margin-bottom: 10px; }
+      .TrackerTextoUltimo p {
+        font-size: 0.8em; }
+  /* *********S10************* */
+  .ImgS10 {
+    height: 300px;
+    margin: 50px 0; }
+  .TituloS10 {
+    font-size: 1.5em;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 100px; }
+  .S10 {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 25px; }
+    .S10Texto {
+      width: 100%; }
+      .S10Texto p {
+        font-size: 0.8em; }
+    .S10TextoUltimo {
+      margin-top: 0;
+      margin-bottom: 10px; }
+      .S10TextoUltimo p {
+        font-size: 0.8em; }
+    .S10Img {
+      margin: auto; }
+    .S10Img img {
+      margin-left: 0;
+      margin-right: 0; } }

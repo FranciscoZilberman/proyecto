@@ -5,10 +5,10 @@ button {
     outline: none;
     padding: 10px 15px;
     cursor: pointer;
-    transition: 8s;
+    transition: 1s;
     overflow: hidden;
-    background: $negro;
-    color: $amarillo;
+    background: rgb(185, 173, 0);
+    color: $negro;
     margin-top: 3rem;
     margin-left: 45%;
     margin-bottom: 3rem;
@@ -22,7 +22,7 @@ button:hover {
 button span {
     position: absolute;
     background: white;
-    transition: 8s;
+    transition: 1s;
 }
 
 button span:nth-child(1) {
